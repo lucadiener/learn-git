@@ -10,4 +10,5 @@ RUN \
  && sudo add-apt-repository -y ppa:system76/pop \
  && sudo apt-get update \
  && sudo apt-get install -y cmake lldb gdb ninja-build libgtest-dev clang clang-tools chromium\
+ && sudo apt-get install -y libopencv-dev\
  && sudo rm -rf /var/lib/apt/lists/*

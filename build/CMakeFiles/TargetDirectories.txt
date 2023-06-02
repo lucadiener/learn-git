@@ -1,0 +1,2 @@
+/workspaces/learn-git/build/CMakeFiles/edit_cache.dir
+/workspaces/learn-git/build/CMakeFiles/rebuild_cache.dir
