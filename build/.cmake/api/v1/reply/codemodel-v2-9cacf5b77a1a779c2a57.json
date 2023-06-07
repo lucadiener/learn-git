@@ -12,7 +12,11 @@
 						"string" : "3.20"
 					},
 					"projectIndex" : 0,
-					"source" : "."
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
 				}
 			],
 			"name" : "Debug",
@@ -23,10 +27,23 @@
 					[
 						0
 					],
-					"name" : "opencv_basics"
+					"name" : "opencv_basics",
+					"targetIndexes" : 
+					[
+						0
+					]
 				}
 			],
-			"targets" : []
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "opencv_canny::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencv_canny-Debug-c622ce993c2f727968f1.json",
+					"name" : "opencv_canny",
+					"projectIndex" : 0
+				}
+			]
 		}
 	],
 	"kind" : "codemodel",

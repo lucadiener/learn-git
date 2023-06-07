@@ -1,0 +1,5 @@
+# ninja log v5
+1	4597	1685695945242314100	CMakeFiles/opencv_hello.dir/opencvhelloworld.cpp.o	5b2d6a0d73f538e2
+4599	14116	1685695954762314100	opencv_hello	bf57ddf993f569ad
+2	1636	1685696366698314100	CMakeFiles/opencv_canny.dir/canny_edges.cpp.o	a2459ff3838891f5
+1636	2223	1685696367286314100	opencv_canny	21d741a46712e88c

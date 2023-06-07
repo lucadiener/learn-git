@@ -40,6 +40,40 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = /workspaces/learn-git/build/
+# =============================================================================
+# Object build statements for EXECUTABLE target opencv_canny
+
+
+#############################################
+# Order-only phony target for opencv_canny
+
+build cmake_object_order_depends_target_opencv_canny: phony || CMakeFiles/opencv_canny.dir
+
+build CMakeFiles/opencv_canny.dir/canny_edges.cpp.o: CXX_COMPILER__opencv_canny_unscanned_Debug /workspaces/learn-git/canny_edges.cpp || cmake_object_order_depends_target_opencv_canny
+  DEFINES = -DIMGPATH=\"/workspaces/learn-git\" -DOUTPATH=\"/workspaces/learn-git/build\"
+  DEP_FILE = CMakeFiles/opencv_canny.dir/canny_edges.cpp.o.d
+  FLAGS = -g -std=gnu++14 -Wall -Wextra -pedantic -O0
+  INCLUDES = -isystem /usr/include/opencv4
+  OBJECT_DIR = CMakeFiles/opencv_canny.dir
+  OBJECT_FILE_DIR = CMakeFiles/opencv_canny.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target opencv_canny
+
+
+#############################################
+# Link the executable opencv_canny
+
+build opencv_canny: CXX_EXECUTABLE_LINKER__opencv_canny_Debug CMakeFiles/opencv_canny.dir/canny_edges.cpp.o | /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0
+  FLAGS = -g
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0
+  OBJECT_DIR = CMakeFiles/opencv_canny.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = opencv_canny
+  TARGET_PDB = opencv_canny.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -74,7 +108,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /workspaces/learn-git/build
 
-build all: phony
+build all: phony opencv_canny
 
 # =============================================================================
 # Built-in targets
@@ -83,14 +117,14 @@ build all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /usr/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux.cmake /usr/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /workspaces/learn-git/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig-version.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules-release.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules.cmake /usr/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU.cmake /usr/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.26/Modules/FindPackageMessage.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux.cmake /usr/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /workspaces/learn-git/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /usr/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux.cmake /usr/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /workspaces/learn-git/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
+build /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig-version.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules-release.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules.cmake /usr/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.26/Modules/Compiler/Clang.cmake /usr/share/cmake-3.26/Modules/Compiler/GNU.cmake /usr/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.26/Modules/FindPackageMessage.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.26/Modules/Platform/Linux.cmake /usr/share/cmake-3.26/Modules/Platform/UnixPaths.cmake /workspaces/learn-git/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
 
 
 #############################################

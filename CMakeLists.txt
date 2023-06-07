@@ -17,20 +17,20 @@ find_package( OpenCV ) # alternative: find_package( OpenCV REQUIRED )
 # continue only if opencv is found
 if(OpenCV_FOUND)
     # add executable for opencv hello world
-    add_executable(opencv_hello opencvhelloworld.cpp)
+   # add_executable(opencv_hello opencvhelloworld.cpp)
     # declare the path to the image we want to work with
-    target_compile_definitions(opencv_hello PRIVATE OUTPATH="${CMAKE_CURRENT_BINARY_DIR}")
+   # target_compile_definitions(opencv_hello PRIVATE OUTPATH="${CMAKE_CURRENT_BINARY_DIR}")
     # include and link all opencv stuff
-    target_include_directories(opencv_hello PUBLIC ${OpenCV_INCLUDE_DIRS} )
-    target_link_libraries( opencv_hello ${OpenCV_LIBRARIES})
+   # target_include_directories(opencv_hello PUBLIC ${OpenCV_INCLUDE_DIRS} )
+   # target_link_libraries( opencv_hello ${OpenCV_LIBRARIES})
 
     # add an executable for opencv canny 
-#    add_executable(opencv_canny src/canny_edges.cpp)
+    add_executable(opencv_canny canny_edges.cpp)
     # declare the path to the image we want to work with
-#    target_compile_definitions(opencv_canny PRIVATE IMGPATH="${CMAKE_CURRENT_LIST_DIR}/resources" OUTPATH="${CMAKE_CURRENT_BINARY_DIR}")
+   target_compile_definitions(opencv_canny PRIVATE IMGPATH="${CMAKE_CURRENT_LIST_DIR}" OUTPATH="${CMAKE_CURRENT_BINARY_DIR}")
     # include and link all opencv stuff
-#    target_include_directories(opencv_canny PUBLIC ${OpenCV_INCLUDE_DIRS} )
-#    target_link_libraries( opencv_canny ${OpenCV_LIBRARIES})
+    target_include_directories(opencv_canny PUBLIC ${OpenCV_INCLUDE_DIRS} )
+    target_link_libraries( opencv_canny ${OpenCV_LIBRARIES})
 
     # add an executable for opencv contours 
 #    add_executable(opencv_contours src/contours.cpp)
